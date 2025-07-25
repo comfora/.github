@@ -1,0 +1,85 @@
+:root {
+  /* Custom primary color palette based on #ffcc4d */
+  --md-primary-fg-color: #ffcc4d;
+  --md-primary-fg-color--light: #ffdc7a;
+  --md-primary-fg-color--dark: #e6b82d;
+  --md-primary-bg-color: #1e1e1e;
+  --md-primary-bg-color--light: #2d2d2d;
+
+  /* Accent colors - amber to complement the yellow primary */
+  --md-accent-fg-color: #ffa726;
+  --md-accent-fg-color--transparent: rgba(255, 167, 38, 0.1);
+  --md-accent-bg-color: #2d2d2d;
+  --md-accent-bg-color--light: #3d3d3d;
+
+  /* Dark theme background colors */
+  --md-default-bg-color: #121212;
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #cccccc;
+  --md-default-fg-color--lighter: #999999;
+  --md-default-fg-color--lightest: #666666;
+
+  /* Code block colors */
+  --md-code-bg-color: #2d2d2d;
+  --md-code-fg-color: #ffcc4d;
+
+  /* Admonition icons */
+  --md-admonition-icon--comfora: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.2"%3E%3Cdefs%3E%3CclipPath id="04b0c9a735"%3E%3Cpath d="M 10.226562 0 L 364.976562 0 L 364.976562 375 L 10.226562 375 Z M 10.226562 0 "/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id="2aea000d6a"%3E%3Cg clip-rule="nonzero" clip-path="url(%2304b0c9a735)"%3E%3Cpath style=" stroke:none;fill-rule:nonzero;fill:%23f4900c;fill-opacity:1;" d="M 364.789062 197.917969 C 364.789062 176.4375 360.964844 155.84375 353.949219 136.792969 C 349.15625 192.925781 319.210938 221.761719 287.921875 208.332031 C 258.613281 195.75 278.363281 146.699219 279.824219 123.292969 C 282.285156 83.613281 279.699219 38.199219 207.582031 0.4375 C 237.546875 57.730469 211.054688 93.324219 183.265625 95.488281 C 152.433594 97.894531 124.199219 69.011719 134.621094 22.136719 C 100.875 46.988281 99.894531 88.824219 110.304688 115.886719 C 121.167969 144.09375 109.867188 167.53125 83.382812 170.136719 C 53.78125 173.050781 37.335938 138.457031 52.5 83.332031 C 26.257812 114.21875 10.414062 154.21875 10.414062 197.917969 C 10.414062 295.71875 89.742188 375 187.601562 375 C 285.460938 375 364.789062 295.71875 364.789062 197.917969 Z M 364.789062 197.917969 "/%3E%3C/g%3E%3Cpath style=" stroke:none;fill-rule:nonzero;fill:%23ffcc4d;fill-opacity:1;" d="M 295.9375 249.988281 C 297.480469 282.113281 269.246094 294.707031 254.046875 288.625 C 232.097656 279.84375 237.988281 264.761719 232.335938 233.511719 C 226.6875 202.261719 204.976562 180.5625 172.84375 171.011719 C 196.296875 236.980469 159.847656 261.292969 140.742188 265.636719 C 121.230469 270.074219 101.625 265.625 99.382812 223.894531 C 76.621094 246.542969 62.527344 277.875 62.527344 312.5 C 62.527344 316.332031 62.769531 320.105469 63.101562 323.855469 C 95.097656 355.457031 139.050781 375 187.601562 375 C 236.152344 375 280.105469 355.457031 312.101562 323.855469 C 312.4375 320.105469 312.675781 316.332031 312.675781 312.5 C 312.675781 289.71875 306.589844 268.375 295.9375 249.988281 Z M 295.9375 249.988281 "/%3E%3C/g%3E%3C/svg%3E')
+}
+
+.md-typeset .admonition.comfora,
+.md-typeset details.comfora {
+  border-color: rgb(255, 204, 77);
+}
+.md-typeset .comfora > .admonition-title,
+.md-typeset .comfora > summary {
+  background-color: rgba(255, 204, 77, 0.1);
+}
+.md-typeset .comfora > .admonition-title::before,
+.md-typeset .comfora > summary::before {
+  background-color: rgb(255, 204, 77);
+  -webkit-mask-image: var(--md-admonition-icon--comfora);
+          mask-image: var(--md-admonition-icon--comfora);
+}
+
+.md-footer-copyright__highlight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Ensure iframe displays inline with the copyright text */
+.md-footer-copyright__highlight iframe {
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* Alternative: If the above doesn't work, force the footer to show flex layout */
+.md-footer-copyright {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Make sure iframe is visible and styled properly */
+.md-footer-copyright iframe {
+  display: inline-block !important;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+/* Responsive: stack on mobile */
+@media screen and (max-width: 768px) {
+  .md-footer-copyright {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  .md-footer-copyright iframe {
+    margin-left: 0;
+  }
+}

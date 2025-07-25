@@ -1,0 +1,2 @@
+mkdocs-material==9.6.15
+material-plausible-plugin==0.3.0

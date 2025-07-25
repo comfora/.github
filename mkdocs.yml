@@ -1,0 +1,98 @@
+site_name: Comfora
+site_url: https://comfora.org
+
+nav:
+  - Home: index.md
+  - Projects & Services: projects.md
+  - About us: about.md
+
+theme:
+  name: material
+  language: en
+
+  description: >-
+    Open-source community building collaborative, impactful, and accessible projects for everyone.
+
+  logo: assets/logo-black.svg
+  favicon: assets/favicon.ico
+
+  palette:
+    scheme: primary
+    primary: custom
+    accent: amber
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate  # Change for Docs
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+
+  font:
+    text: Roboto Slab
+    code: JetBrains Mono
+
+  custom_dir: overrides
+
+extra_css:
+  - stylesheets/custom.css
+
+plugins:
+  - search
+  - material-plausible
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - footnotes
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  analytics:
+    provider: plausible
+    domain: comfora.org
+    src: "https://analytics.comfora.org/js/plausible.js"
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/comfora
+      name: Comfora on GitHub
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/7pAmWQqGhF
+      name: Our community server!
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/comfora.org
+      name: Comfora on Bluesky
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/comforaorg
+      name: Comfora on Twitter
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@comfora
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/user/comforaorg/
+      name: Comfora on Reddit
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:community@comfora.org
+      name: Our community email!
+
+copyright: |
+  <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+    <span>Copyright © 2025 Comfora </span>
+    <iframe src="https://status.comfora.org/embed-badges/live-status?align=start&background-light=f5f5f5&text-light=000000" width="190" height="30" loading="lazy" frameborder="0" scrolling="no"></iframe>
+  </div>
