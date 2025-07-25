@@ -1,6 +1,6 @@
 # Welcome to Comfora?
 
-> [!NOTE] You found us!
+> [!NOTE]
 > You have found both our organization README and our root source for the [comfora.org](https://comfora.org) website?
 
 We've open-sourced our root website source for,
@@ -13,7 +13,7 @@ We've open-sourced our root website source for,
 
 ## Contributing to Comfora
 
-> [!WARNING] Future organization changes
+> [!WARNING]
 > All contributing policies will be changed in a future organization update to be one policy instead of each project having different policies.
 
 We love to accept your contributions to Comfora's website! Please remember these policies when contributing.
@@ -25,7 +25,7 @@ Now we're ready!
 
 ### Setting up the Environment
 
-> [!NOTE] Only for the website!
+> [!NOTE]
 > If you only want to contribute to the Organization README, go ahead with editing our README in `.profile`.
 
 - 🐍 Python 3.8 or greater
@@ -45,7 +45,7 @@ This is our recommended method as the package won't be installed into your pytho
 
 #### Setting up the Environment - `pip` method
 
-> [!WARNING] Not recommended!
+> [!WARNING]
 > We only have a `requirements.txt` which is maintained by Comfora Renovate for Cloudflare Workers deployments which is how we publish [comfora.org.](https://comfora.org)
 
 Clone the directory by doing, `git clone https://github.com/comfora/.github.git` and open code within the directory.
