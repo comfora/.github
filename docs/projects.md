@@ -7,6 +7,9 @@ icon: fontawesome/solid/boxes-stacked
 # Projects and Services
 <!-- markdownlint-enable MD025 MDO26 -->
 
+!!! note "Major Revision"
+    This page will soon get a revision soon, please take the information or content with a grain of salt.
+
 Comfora hosts a couple of projects on both on [GitHub](https://github.com/comfora) and our own infrastructure which allows us to bring community members more **reliability** and **transparent with operations.** Couple of things to note,
 
 <!-- markdownlint-disable MD007 -->

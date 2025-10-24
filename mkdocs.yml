@@ -48,7 +48,6 @@ extra_css:
 
 plugins:
   - search
-  - material-plausible
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -65,10 +64,6 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra:
-  analytics:
-    provider: plausible
-    domain: comfora.org
-    src: "https://analytics.comfora.org/js/plausible.js"
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/comfora
@@ -96,3 +91,6 @@ copyright: |
     <span>Copyright © 2025 Comfora </span>
     <iframe src="https://status.comfora.org/embed-badges/live-status?align=start&background-light=f5f5f5&text-light=000000" width="190" height="30" loading="lazy" frameborder="0" scrolling="no"></iframe>
   </div>
+
+exclude_docs: |
+  !*.well-known

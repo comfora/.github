@@ -19,21 +19,10 @@ development is funded by,
 - **Community collaboration** and networking.
 - Having people have a say in our **governance and management.**
 
-## F**k AI 🤬
+## F^^k *Generative* AI
 
-Comfora Organization is committed to not using artificial intelligence for graphical generations or text generation on any of our **social platforms, community, and websites (docs included).** Art and graphics are the backbone of creativity, and we do not support AI models stealing artists or graphic designers work without payment.
+Better known as our **Responsible AI Usage** policy at Comfora, We are committed to not using artificial intelligence for graphical generations (such as AI pictures, videos, nor audio) on any of our **social platforms, community, and websites (docs included).** Art and graphics are the backbone of creativity, and we do not support AI models stealing artists or graphic designers work without payment.
 
-The intelligence of AI is unparalleled, so thus, **we use AI for the following:**
+However the intelligence of Agentic and Text-Based AI is unparalleled, so thus, **we use AI for the following:**
 
-- Small code generations in our projects; we don't generate full functions or packages from AI
-- Grammar corrections are made from tools such as LanguageTool and Grammarly; we also don't allow full content generations.
-
-## Contact us
-
-Wanting to contact us about something or are you a organization seeking corporation or partnerships? Feel free to reach out!
-
-- Business Inquiries: [**business@comfora.org**](mailto:business@comfora.org)
-- Service management or offering: [**services@comfora.org**](mailto:services@comfora.org)
-- Other: [**community@comfora.org**](mailto:community@comfora.org)
-
-Or, make a ticket with the category, **"Other / Questions"** in our [discord server.](https://discord.gg/7pAmWQqGhF)
+- Small code generations in our projects; we don't generate full functions or packages from AI for security reasons.
