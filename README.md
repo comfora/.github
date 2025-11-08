@@ -33,36 +33,9 @@ Now we're ready!
   - `markdownlint` by David Anson
   - `Code Spell Checker` by Street Side Software
 
-#### Setting up the Environment - `uv` method
-
-This is our recommended method as the package won't be installed into your python installation and is a one command only.
-
-1. Setup [`uv`](https://docs.astral.sh/uv/getting-started/installation/) for your specific operating system.
-   1. This allows you to not bother with `.venv`s and global python installations.
-2. Clone the directory by doing, `git clone https://github.com/comfora/.github.git` and open code within the directory.
-3. Now run `uv tool run --with mkdocs-material --with material-plausible-plugin mkdocs serve` in your terminal.
-4. Now you're set for writing pages!
-
-#### Setting up the Environment - `pip` method
-
 > [!WARNING]
-> We only have a `requirements.txt` which is maintained by Comfora Renovate for Cloudflare Workers deployments which is how we publish [comfora.org.](https://comfora.org)
+> Website is undergoing a major migration to Zensical due to Material for MkDocs entering Maintenance Mode.
 
-Clone the directory by doing, `git clone https://github.com/comfora/.github.git` and open code within the directory.
-
-**For Windows systems,**
-
-1. Create a virtual environment `python -m venv venv` in the cloned directory.
-2. Activate the virtual environment by `.\venv\Scripts\activate`.
-3. Install the dependencies by `pip install -r requirements.txt`.
-
-**For Linux or Unix (macOS) systems,**
-
-1. Create a virtual environment `python3 -m venv venv` in the cloned directory.
-2. Activate the virtual environment by `source venv/Scripts/activate`.
-3. Install the dependencies by `pip install -r requirements.txt`.
-
-Now you're set for writing pages!
 
 ## Licensing
 

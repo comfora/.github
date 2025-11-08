@@ -1,6 +1,8 @@
 ---
 title: What is Comfora?
 description: Our mission statements and values within Comfora.
+
+icon: lucide/badge-question-mark
 ---
 <!-- markdownlint-disable MD025 MD026 -->
 # What is :comfora-logo: ?
@@ -21,7 +23,7 @@ development is funded by,
 
 ## F^^k *Generative* AI
 
-Better known as our **Responsible AI Usage** policy at Comfora, We are committed to not using artificial intelligence for graphical generations (such as AI pictures, videos, nor audio) on any of our **social platforms, community, and websites (docs included).** Art and graphics are the backbone of creativity, and we do not support AI models stealing artists or graphic designers work without payment.
+Better known as our **Responsible AI Usage** policy at Comfora, we are committed to not using artificial intelligence for graphical generations (such as AI pictures, videos, nor audio) on any of our **social platforms, community, and websites (docs included).** Art and graphics are the backbone of creativity, and we do not support AI models stealing artists or graphic designers work without payment.
 
 However the intelligence of Agentic and Text-Based AI is unparalleled, so thus, **we use AI for the following:**
 
