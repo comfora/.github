@@ -5,31 +5,42 @@ repo_url = "https://github.com/comfora/.github"
 repo_name = "comfora/.github"
 site_description = "Open-source community building collaborative, impactful, and accessible projects for everyone."
 site_author = "Comfora Organization"
+
 copyright = '''
 <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
     <span>Copyright © 2025 Comfora </span>
     <iframe src="https://status.comfora.org/embed-badges/live-status?align=start&background-light=171717&text-light=ffffff&background-dark=f5f5f5&text-dark=000000" width="190" height="30" loading="lazy" frameborder="0" scrolling="no" style="color-scheme: light dark;"></iframe>
 </div>
 '''
+
 use_directory_urls = true
-extra_css = ["stylesheets/extra.css"]
+extra_css = ["assets/stylesheets/extra.css"]
 
 nav = [
-    {"Home" = [
-        "index.md",
-        # ...
-        # {"Page n" = "section/page-n.md"}
-    ]},
-    {"About Comfora" = [
-        "about.md",
-    ]}
+    { Home = [
+        "index.md"
+    ] },
+    { "About Comfora" = [
+        "about.md"
+    ] }
 ]
+
+[project.files]
+
+exclude = [
+    "!*.well-known/*"
+]
+
+[project.extra]
+static_dirs = ["docs/.well-known"]
 
 [project.theme]
 scheme = "default"
 language = "en"
 logo = "assets/comfora.svg"
 favicon = "assets/favicon.ico"
+custom_dir = "overrides"
+
 features = [
     "navigation.instant",
     "navigation.instant.prefetch",
@@ -48,53 +59,56 @@ features = [
     "content.code.annotate",
     "content.tabs.link",
     "content.footnote.tooltips",
-    "content.tooltips",
-    # "navigation.footer",
+    "content.tooltips"
 ]
 
-[project.markdown_extensions.abbr]
-[project.markdown_extensions.admonition]
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "deep orange"
+
+[project.theme.font]
+text = "Roboto Slab"
+code = "JetBrains Mono"
+
+[project.markdown_extensions]
+
 [project.markdown_extensions.pymdownx.caret]
 [project.markdown_extensions.pymdownx.keys]
 [project.markdown_extensions.pymdownx.mark]
 [project.markdown_extensions.pymdownx.tilde]
 [project.markdown_extensions.pymdownx.highlight]
-[project.markdown_extensions.pymdownx.blocks.caption]
-anchor_linenums = true
-line_spans = "__span"
-pygments_lang_class = true
 [project.markdown_extensions.def_list]
+
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
+
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.admonition]
 [project.markdown_extensions.pymdownx.details]
 [project.markdown_extensions.pymdownx.superfences]
-[project.markdown_extensions.pymdownx.superfences.custom_fences]
+
+[[project.markdown_extensions.pymdownx.superfences.custom_fences]]
 name = "mermaid"
 class = "mermaid"
 format = "pymdownx.superfences.fence_code_format"
-[project.markdown_extensions.tabbed]
+
+[project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
+
 [project.markdown_extensions.pymdownx.tabbed.slugify]
 object = "pymdownx.slugs.slugify"
 kwds = { case = "lower" }
+
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.md_in_html]
+
 [project.markdown_extensions.toc]
-permalink =  true
+permalink = true
 title = "Featured on this page"
-[project.markdown_extensions.tables]
 
-
-
-[project.theme.palette]
-primary = "custom"
-accent = "amber"
-
-[project.theme.font]
-text = "Roboto Slab"
-code = "JetBrains Mono"
+[project.markdown_extensions.abbr]
 
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji"
